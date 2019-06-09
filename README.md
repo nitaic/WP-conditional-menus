@@ -1,6 +1,6 @@
 # WordPress-conditional-menus
 
-Loads custom menu if page has been "assigned" to a location.
+Function to build menu args which loads custom menu if page has been "assigned" to a location.
 
 Using ACF relationship fields and creating a custom post type "locations", pages can be assigned to a location.
 
