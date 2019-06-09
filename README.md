@@ -1,12 +1,7 @@
-# WP-conditional-menus
-Useful to load a particular menu based on a condition.
+# WordPress-conditional-menus
 
-For example, lets say you want to be able to set an individual custom menu for any page marked as a "location". You could add an ACF field to all pages. If that page has the ACF field as set to true, then this logic builds the wp_nav_menu() $args to load a menu based on menu slug. In this instance the menu slug must match the page slug.
+Loads custom menu if page has been "assigned" to a location.
 
-This is just one way to set the $args. Anything is possible.
+Using ACF relationship fields and creating a custom post type "locations", pages can be assigned to a location.
 
-Can be used like so:
-```
-wp_nav_menu(custom_menu_args());
-```
-
+If a page has been assigned a location, this function checks if there is a menu with matching slug of location. If there is no match it defaults to loading the menu assigned to the Primary Navigation menu position.
